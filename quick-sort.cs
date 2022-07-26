@@ -2,7 +2,7 @@ namespace algorithms.sort;
 
 class QuickSort
 {
-    public int[] qsort(int[] arr, int p, int r)
+    public void qsort(int[] arr, int p, int r)
     {
         if(p < r)
         {
@@ -10,8 +10,6 @@ class QuickSort
             qsort(arr, p, q-1);
             qsort(arr, q+1, r);
         }
-
-        return arr;
     }
 
     private int partition(int[] arr, int p, int r)
