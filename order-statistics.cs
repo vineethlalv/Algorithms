@@ -48,7 +48,7 @@ class IthOrderStatistics
     private (int, int) partition(int[] arr, int p, int r, int pivot)
     {
         // rearrange array as => (less-than-pivot) | (equal-to-pivot) | (greater-than-pivot)
-        //                                         |q               q_|
+        //                                        q|                q_|
 
         if (p < r)
         {
@@ -63,11 +63,16 @@ class IthOrderStatistics
                     ++q_;
                     if (t == pivot)
                     {
-                        t = arr[q_];
+                        t = arr[q_];                       
+                        arr[q] = arr[i];
+                        arr[i] = t;
                         arr[q_] = pivot;
                     }
-                    arr[q] = arr[i];
-                    arr[i] = t;
+                    else
+                    {
+                        arr[q] = arr[i];
+                        arr[i] = t;
+                    }
                 }
                 else if (arr[i] == pivot)
                 {
