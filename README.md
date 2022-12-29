@@ -1,5 +1,5 @@
 # Algorithms
-### <ins>sorting</ins>
+### <ins>Sorting</ins>
 [Quick Sort](https://github.com/vineethlalv/Algorithms/blob/main/quick-sort.cs) - $O(nlogn)$ avg, $O(n^2)$ worst  
 [Merge Sort](https://github.com/vineethlalv/Algorithms/blob/main/merge-sort.cs) - $O(nlogn)$  
 [Heap Sort](https://github.com/vineethlalv/Algorithms/blob/main/heap-sort.cs) - $O(nlogn)$  
